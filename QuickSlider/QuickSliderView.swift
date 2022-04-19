@@ -17,9 +17,9 @@ struct QuickSliderView: View {
     var body: some View {
         
         
-        VStack {
+        VStack {    
             Circle()
-                .strokeBorder(Color.red, lineWidth: 2)
+                .strokeBorder(Color.green, lineWidth: 2)
                 .frame(width: self.radius, height: self.radius)
                 .overlay(
                     Image(systemName: "arrow.down")
