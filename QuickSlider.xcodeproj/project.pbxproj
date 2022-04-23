@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		727B78AF28139877002EBA4A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B78AE28139877002EBA4A /* Game.swift */; };
 		729BA96E280BAB2900DF3595 /* QuickSliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729BA96D280BAB2900DF3595 /* QuickSliderApp.swift */; };
 		729BA970280BAB2900DF3595 /* QuickSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729BA96F280BAB2900DF3595 /* QuickSliderView.swift */; };
 		729BA972280BAB2C00DF3595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729BA971280BAB2C00DF3595 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		727B78AE28139877002EBA4A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		729BA96A280BAB2900DF3595 /* QuickSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		729BA96D280BAB2900DF3595 /* QuickSliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSliderApp.swift; sourceTree = "<group>"; };
 		729BA96F280BAB2900DF3595 /* QuickSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSliderView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		727B78AC2813984C002EBA4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				727B78AE28139877002EBA4A /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		727B78AD28139853002EBA4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				729BA96D280BAB2900DF3595 /* QuickSliderApp.swift */,
+				729BA96F280BAB2900DF3595 /* QuickSliderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		729BA961280BAB2900DF3595 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +113,8 @@
 		729BA96C280BAB2900DF3595 /* QuickSlider */ = {
 			isa = PBXGroup;
 			children = (
-				729BA96D280BAB2900DF3595 /* QuickSliderApp.swift */,
-				729BA96F280BAB2900DF3595 /* QuickSliderView.swift */,
+				727B78AD28139853002EBA4A /* Views */,
+				727B78AC2813984C002EBA4A /* Models */,
 				729BA971280BAB2C00DF3595 /* Assets.xcassets */,
 				729BA973280BAB2C00DF3595 /* Preview Content */,
 			);
@@ -258,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729BA970280BAB2900DF3595 /* QuickSliderView.swift in Sources */,
+				727B78AF28139877002EBA4A /* Game.swift in Sources */,
 				729BA96E280BAB2900DF3595 /* QuickSliderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

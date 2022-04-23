@@ -27,7 +27,7 @@ struct QuickSliderView: View {
                         .rotationEffect(.degrees(self.angle))
                 )
         }
-        .animation(.default)
+        .animation(.default, value: angle)
         .onReceive(timer) { _ in
             angle += 1
         }
