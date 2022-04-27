@@ -36,6 +36,7 @@ struct QuickSliderView: View {
                     .stroke(Color.yellow, lineWidth:2)
                     .frame(width: self.radius, height: self.radius)
                 )
+                //this is a test
                 .overlay(Circle()
                     .trim(from: game.target / 360.0 - game.redRange,
                           to: game.target / 360.0 + game.redRange)

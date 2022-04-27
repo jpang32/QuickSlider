@@ -22,7 +22,13 @@ struct Game {
     }
     
     func getSpeed(currentAngle: Double) -> Double {
-        return (1.0 / abs(self.target - currentAngle.truncatingRemainder(dividingBy: 360)) * self.acceleration)
+        return (1.0 / self.getDistance(currentAngle: currentAngle)) * self.acceleration
+    }
+    
+    private func getDistance(currentAngle: Double) -> Double {
+        var distance: Double = abs(self.target - currentAngle.truncatingRemainder(dividingBy: 360.0))
+        distance = distance <= 180 ? distance: 360.0 - distance
+        return distance
     }
     
     
