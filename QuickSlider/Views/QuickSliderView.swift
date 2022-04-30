@@ -51,6 +51,9 @@ struct QuickSliderView: View {
                     .frame(width: self.radius, height:self.radius)
                     .rotationEffect(.degrees(game.target - 180.0))
             }
+            Button("Stop", action: {
+                self.timer.upstream.connect().cancel()
+            })
         }
         .animation(.default, value: self.angle)
         .onReceive(timer) { _ in
